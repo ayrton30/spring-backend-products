@@ -2,11 +2,13 @@ package com.coderhouse.products;
 
 import com.coderhouse.products.handle.ApiRestException;
 import com.coderhouse.products.model.Product;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Component
 public class ListProducts {
 
     private List<Product> products;

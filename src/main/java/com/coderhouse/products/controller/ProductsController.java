@@ -3,6 +3,7 @@ package com.coderhouse.products.controller;
 import com.coderhouse.products.ListProducts;
 import com.coderhouse.products.handle.ApiRestException;
 import com.coderhouse.products.model.Product;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -14,7 +15,8 @@ import java.util.List;
 @RequestMapping("/api/productos")
 public class ProductsController {
 
-    ListProducts products = new ListProducts();
+    @Autowired
+    ListProducts products;
     Logger logger = LogManager.getLogger(ProductsController.class);
 
     //A. Listar en forma total

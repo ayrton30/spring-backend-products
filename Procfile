@@ -1,0 +1,1 @@
+web: java -jar build/libs/products-0.0.1-SNAPSHOT.jar
